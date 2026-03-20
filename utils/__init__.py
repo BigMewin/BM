@@ -10,6 +10,14 @@ from .vae_mmd_eval import (
     plot_confusion_matrices,
     run_full_evaluation,
 )
+from .vae_mmd_metrics import (
+    compute_surface_distances,
+    compute_hd95,
+    compute_surface_dice,
+    compute_metrics,
+    avg_metrics,
+    print_metrics,
+)
 
 __all__ = [
     # VAE components
@@ -26,7 +34,7 @@ __all__ = [
     "load_blosc2_array",
     "resize_to_128",
     "DOMAIN_MAP",
-    # Evaluation
+    # Evaluation - domain adaptation
     "extract_raw_features",
     "extract_features_from_dataset",
     "run_tsne",
@@ -34,4 +42,11 @@ __all__ = [
     "evaluate_domain_classifier",
     "plot_confusion_matrices",
     "run_full_evaluation",
+    # Evaluation - segmentation metrics
+    "compute_surface_distances",
+    "compute_hd95",
+    "compute_surface_dice",
+    "compute_metrics",
+    "avg_metrics",
+    "print_metrics",
 ]
