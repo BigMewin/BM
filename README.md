@@ -12,7 +12,7 @@ Brain metastasis segmentation suffers from severe domain shift across institutio
 2. Trains a U-Net-style VAE with MMD regularization to align latent space distributions across Stanford, UCSF, UCLM, and PKG datasets.
 3. Reconstructs training and validation volumes through the VAE encoder-decoder to produce domain-normalized images.
 4. Trains nnU-Net with 5-fold cross-validation on the reconstructed data.
-5. Evaluates on the held-out original (non-reconstructed) test set.
+5. Evaluates on the held-out test set.
 
 ---
 
@@ -57,7 +57,7 @@ All datasets must be obtained directly from the respective sources and are not r
 **Python >= 3.9** is required.
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/vae-mmd-brain-metastasis.git
+git clone https://github.com/YuchenYang/vae-mmd-brain-metastasis.git
 cd vae-mmd-brain-metastasis
 pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
 pip install nibabel SimpleITK scipy scikit-learn matplotlib seaborn tqdm blosc2
