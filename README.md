@@ -286,10 +286,3 @@ The composite training loss combines MSE reconstruction (λ=300), L1 reconstruct
   howpublished={The Cancer Imaging Archive},
   doi={10.7937/k0sm-y874}
 }
-```
-
----
-
-## License
-
-This project is released under the MIT License.
