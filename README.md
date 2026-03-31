@@ -1,5 +1,10 @@
 # VAE-MMD Brain Metastasis Segmentation
 
+## Paper (LaTeX PDF Version)
+
+👉 **[Click here to view the paper (PDF)](./Paper.pdf)**
+
+---
 Domain adaptation for multi-center brain metastasis segmentation using a Variational Autoencoder with Maximum Mean Discrepancy (VAE-MMD) regularization. The model aligns latent representations across four heterogeneous MRI datasets before nnU-Net segmentation training.
 
 ---
